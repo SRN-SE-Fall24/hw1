@@ -9,3 +9,4 @@ def test2():
 
 def test3():
     index.func1(10)
+    index.func1(20)
