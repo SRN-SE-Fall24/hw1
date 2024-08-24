@@ -45,5 +45,9 @@ jobs:
         git config --global user.name "nishadtardalkar"
         git config --global user.email "nishadtardalkar97@gmail.com"
         git add coverage/cov.svg
-        git commit -m 'updating coverage data'
-        git push
+        if git diff --cached --quiet; then
+          echo "No changes in coverage"
+        else
+          git commit -m 'updating coverage data'
+          git push
+        fi
