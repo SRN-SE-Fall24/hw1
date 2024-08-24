@@ -42,3 +42,6 @@ jobs:
         pip install coverage-badge coverage
         coverage run -m pytest tests.py
         coverage-badge -o .github/workflows/cov.svg -f
+        git add .github/workflows/cov.svg
+        git commit -m 'updating coverage data'
+        git push
