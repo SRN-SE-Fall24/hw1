@@ -42,6 +42,8 @@ jobs:
         pip install coverage-badge coverage
         coverage run -m pytest tests.py
         coverage-badge -o .github/workflows/cov.svg -f
+        git config --global user.name "nishadtardalkar"
+        git config --global user.email "nishadtardalkar97@gmail.com"
         git add .github/workflows/cov.svg
         git commit -m 'updating coverage data'
         git push
