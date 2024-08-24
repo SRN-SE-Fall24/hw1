@@ -37,3 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests.py
+    - name: Coverage badge
+      run: |
+        pip install coverage-badge
+        coverage-badge -o .github/workflows/cov.svg
