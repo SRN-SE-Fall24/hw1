@@ -8,4 +8,4 @@ def test2():
     assert 3 == 3
 
 def test3():
-    index.func1()
+    index.func1(10)
