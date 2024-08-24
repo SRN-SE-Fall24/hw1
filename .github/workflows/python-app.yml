@@ -11,7 +11,6 @@ on:
 
 permissions:
   contents: write
-  workflows: write
 
 jobs:
   build:
@@ -42,9 +41,9 @@ jobs:
       run: |
         pip install coverage-badge coverage
         coverage run -m pytest tests.py
-        coverage-badge -o .github/workflows/cov.svg -f
+        coverage-badge -o coverage/cov.svg -f
         git config --global user.name "nishadtardalkar"
         git config --global user.email "nishadtardalkar97@gmail.com"
-        git add .github/workflows/cov.svg
+        git add coverage/cov.svg
         git commit -m 'updating coverage data'
         git push
