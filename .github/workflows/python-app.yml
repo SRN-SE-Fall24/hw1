@@ -40,5 +40,4 @@ jobs:
     - name: Coverage badge
       run: |
         pip install coverage-badge
-        coverage-badge
-        coverage-badge -o .github/workflows/cov.svg
+        coverage-badge -o .github/workflows/cov.svg -f
