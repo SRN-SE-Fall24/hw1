@@ -9,4 +9,4 @@ def test2():
 
 def test3():
     assert 40 == index.func1(20)
-    index.func1(20)
+    assert 11 == index.func1(20)
