@@ -8,5 +8,5 @@ def test2():
     assert 3 == 3
 
 def test3():
-    index.func1(10)
+    assert 70 == index.func1(10)
     index.func1(20)
